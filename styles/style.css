@@ -350,7 +350,7 @@ p {
 
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -368,6 +368,7 @@ a {
   color: #fafffe;
   text-transform: uppercase;
   font-size: 1rem;
+  display: inline-block;
 }
 a.btn {
   font-family: "Playfair Display SC", serif;
@@ -377,9 +378,53 @@ a.btn {
   padding: 5px 12px;
   color: #fafffe;
   background-color: #063974;
-  display: inline-block;
 }
 a.btn:hover, a.btn:focus {
   background-color: #50e3c2;
   color: #0c5f4c;
+}
+
+header {
+  background-image: url("../../../assets/home-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav .navBar li {
+  margin-left: 30px;
+}
+nav .navBar a {
+  line-height: 29px;
+  letter-spacing: 1px;
+  padding: 8px 0 8px 20px;
+}
+nav .navBar a:hover, nav .navBar a:focus {
+  color: #50e3c2;
+}
+
+.welcomeTag {
+  position: absolute;
+  top: 47%;
+  left: 40vw;
+  z-index: 10;
+}
+
+.headerImgContainer {
+  position: relative;
+  top: 180px;
 }

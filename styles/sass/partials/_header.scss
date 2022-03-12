@@ -1,0 +1,44 @@
+header {
+  background-image: url("../../../assets/home-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  .navBar {
+    display: flex;
+
+    li {
+      margin-left: 30px;
+    }
+
+    a {
+      line-height: 29px;
+      letter-spacing: 1px;
+      padding: 8px 0 8px 20px;
+
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.welcomeTag {
+  position: absolute;
+  top: 47%;
+  left: 40vw;
+  z-index: 10;
+}
+
+.headerImgContainer {
+  position: relative;
+  top: 180px;
+}
