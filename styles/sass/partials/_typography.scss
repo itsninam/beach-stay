@@ -12,6 +12,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 a,
 input {
@@ -30,4 +31,56 @@ a {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
+}
+
+h1,
+.logo {
+  font-family: $secondaryFont;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 5.56rem;
+  color: $tertiary;
+}
+
+.logo {
+  font-size: 1.73rem;
+  color: $accent;
+}
+
+.welcomeTag span {
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 58px;
+  letter-spacing: 6.7px;
+  display: block;
+  margin-left: 15px;
+  color: $secondary;
+}
+
+h2,
+h3 {
+  font-family: $primaryFont;
+  font-weight: 700;
+  line-height: 58px;
+  color: $secondary;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 3.2px;
+}
+
+p {
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
