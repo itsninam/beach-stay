@@ -38,7 +38,6 @@
           <h1><span>welcome to</span> Beachstays</h1>
         </div>
       </div>
-
       <div class="headerImgContainer">
         <img src="./assets/header-box.jpg" alt="Sunglasses on beach sand" />
       </div>
@@ -48,17 +47,17 @@
     <main>
       <section class="about">
         <div class="wrapper">
-          <div class="flexContainer">
+          <div class="mainFlexContainer">
             <div class="textContainer">
               <h2>Visit Guyana</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 pulvinar tortor nulla elementum eleifend. Vestibulum consequat
                 vestibulum felis pharetra luctus. Quisque interdum orci quis
-                convallis dapibu nulla pulvinar tortor. Lorem ipsum dolor sit
+                convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla
                 elementum eleifend. Vestibulum consequat vestibulum felis
-                pharetra luctus. Quisque interdum orci qquis convallis.
+                pharetra luctus. Quisque interdum orci quis convallis.
               </p>
               <a href="#" class="btn">Find out more</a>
             </div>
@@ -75,7 +74,7 @@
 
       <section class="imgGallery">
         <div class="wrapper">
-          <ul>
+          <ul class="mainFlexContainer">
             <li>
               <img
                 src="./assets/gallery-image1.jpg"
@@ -101,61 +100,49 @@
 
       <section class="information">
         <div class="wrapper">
-          <div class="infoFlexContainer">
+          <div class="mainFlexContainer">
             <div class="infoContainer">
               <a href="#" class="iconTitle">
-                <i
-                  class="fa-solid fa-house"
-                  aria-hidden="true"
-                  class="icon"
-                ></i>
+                <i class="fa-solid fa-house icon" aria-hidden="true"></i>
                 <h3>Beach houses</h3>
               </a>
               <p>
                 Ut felis eros, vehicula eu magna nec, laoreet blandit nisi.
                 Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem,
-                sit amet imperdiet dolor placerat
+                sit amet imperdiet dolor placerat.
               </p>
             </div>
             <div class="infoContainer">
               <a href="#" class="iconTitle">
-                <i
-                  class="fa-solid fa-users"
-                  aria-hidden="true"
-                  class="icon"
-                ></i>
+                <i class="fa-solid fa-users icon" aria-hidden="true"> </i>
                 <h3>Community</h3>
               </a>
               <p>
                 Ut felis eros, vehicula eu magna nec, laoreet blandit nisi.
                 Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem,
-                sit amet imperdiet dolor placerat
+                sit amet imperdiet dolor placerat.
               </p>
             </div>
             <div class="infoContainer">
               <a href="./blog.html" class="iconTitle">
-                <i class="fa-solid fa-file" aria-hidden="true" class="icon"></i>
+                <i class="fa-solid fa-file icon" aria-hidden="true"></i>
                 <h3>Blog</h3>
               </a>
               <p>
                 Ut felis eros, vehicula eu magna nec, laoreet blandit nisi.
                 Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem,
-                sit amet imperdiet dolor placerat
+                sit amet imperdiet dolor placerat.
               </p>
             </div>
             <div class="infoContainer">
               <a href="./contact.html" class="iconTitle">
-                <i
-                  class="fa-solid fa-phone-flip"
-                  aria-hidden="true"
-                  class="icon"
-                ></i>
+                <i class="fa-solid fa-phone-flip icon" aria-hidden="true"></i>
                 <h3>Get in Touch</h3>
               </a>
               <p>
                 Ut felis eros, vehicula eu magna nec, laoreet blandit nisi.
                 Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem,
-                sit amet imperdiet dolor placerat
+                sit amet imperdiet dolor placerat.
               </p>
             </div>
           </div>
@@ -163,24 +150,48 @@
       </section>
       <!-- information section ends here -->
 
+      <!-- plan location section starts here -->
       <section class="planLocations">
-        <div class="flexContainer">
+        <div class="bothContainer top">
           <div class="leftImgContainer">
             <img
               src="./assets/left-image.jpg"
               alt="Tall white building with palm tree"
             />
           </div>
-          <div class="planAhead wrapper">
-            <h2>Plan ahead</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
-              risus nec orci or nare condimentum. Nam suscipit odio lorem, id
-              vestibulum lacus tristique eu. Sed urna ex.
-            </p>
-            <a href="#" class="btn">Read more</a>
+          <div class="planAhead">
+            <div class="contentContainer">
+              <h2>Plan ahead</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
+                risus nec orci or nare condimentum. Nam suscipit odio lorem, id
+                vestibulum lacus tristique eu. Sed urna ex.
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
           </div>
-          <div class="newLocations wrapper">
+        </div>
+        <div class="bothContainer bottom">
+          <div class="newLocations">
+            <div class="contentContainer">
+              <h2>New Locations</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
+                risus nec orci or nare condimentum. Nam suscipit odio lorem, id
+                vestibulum lacus tristique eu. Sed urna ex.
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+          <div class="rightImgContainer">
+            <img
+              src="./assets/right-image.jpg"
+              alt="Looking from a hill down to the ocean"
+            />
+          </div>
+        </div>
+
+        <!-- <div class="planAhead wrapper">
             <h2>New Locations</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
@@ -192,10 +203,9 @@
           <div class="rightImgContainer">
             <img
               src="./assets/right-image.jpg"
-              alt="Tall white building with palm tree"
+              alt="Looking from a hill down to the ocean"
             />
-          </div>
-        </div>
+          </div> -->
       </section>
       <!-- plan locations section ends here -->
     </main>
