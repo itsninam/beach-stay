@@ -464,21 +464,34 @@ nav .navBar a:hover, nav .navBar a:focus {
   width: calc(33.3333333333% - 30px);
 }
 
-.information .infoContainer {
-  max-width: 43%;
-}
-.information .infoContainer .iconTitle {
+.infoFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.information .infoContainer .iconTitle .icon {
+.infoFlexContainer .infoContainer {
+  max-width: 40%;
+  position: relative;
+}
+.infoFlexContainer .infoContainer .iconTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconTitle .icon {
   color: #fff;
   background-color: #50e3c2;
   font-size: 1.5rem;
-  height: 60px;
-  width: 60px;
-  margin-right: 10px;
+  height: 50px;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,6 +502,22 @@ nav .navBar a:hover, nav .navBar a:focus {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100%;
+  margin-bottom: 15px;
+  position: absolute;
+  left: -62px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.iconTitle .icon:hover, .iconTitle .icon:focus {
+  color: #063974;
+  background-color: transparent;
+}
+.iconTitle .icon:hover:hover + h3, .iconTitle .icon:hover:focus + h3, .iconTitle .icon:focus:hover + h3, .iconTitle .icon:focus:focus + h3 {
+  color: #063974;
+}
+.iconTitle h3:hover,
+.iconTitle h3:focus {
+  color: #063974;
 }
 
 .bothContainer {
@@ -545,4 +574,28 @@ nav .navBar a:hover, nav .navBar a:focus {
 .bottom .rightImgContainer img {
   -webkit-box-shadow: -20px 20px 0 -3px #50e3c2;
           box-shadow: -20px 20px 0 -3px #50e3c2;
+}
+
+.bottomBanner {
+  background-image: url("../../../assets/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.freeTrip {
+  text-align: center;
+  padding: 150px 0;
+  max-width: 67%;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #272727;
+  color: white;
+}
+.copyright p {
+  margin-bottom: 0;
+  padding: 3px 0;
 }

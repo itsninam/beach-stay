@@ -38,26 +38,53 @@
 //image gallery end
 
 // information start
-.information {
+.infoFlexContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
   .infoContainer {
-    max-width: 43%;
+    max-width: 40%;
+    position: relative;
 
     .iconTitle {
       display: flex;
+      align-items: center;
+    }
+  }
+}
 
-      .icon {
-        color: #fff;
-        background-color: $accent;
-        font-size: 1.5rem;
-        height: 60px;
-        width: 60px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
+.iconTitle {
+  .icon {
+    color: #fff;
+    background-color: $accent;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    position: absolute;
+    left: -62px;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      color: $tertiary;
+      background-color: transparent;
+
+      &:hover + h3,
+      &:focus + h3 {
+        color: $tertiary;
       }
     }
+  }
+
+  h3:hover,
+  h3:focus {
+    color: $tertiary;
   }
 }
 //information end
@@ -108,5 +135,31 @@
     }
   }
 }
-
 // plan location end
+
+// footer start
+.bottomBanner {
+  background-image: url("../../../assets/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.freeTrip {
+  text-align: center;
+  padding: 150px 0;
+  max-width: 67%;
+}
+
+.copyright {
+  text-align: center;
+  background-color: rgb(39, 39, 39);
+  color: white;
+
+  p {
+    margin-bottom: 0;
+    padding: 3px 0;
+  }
+}
+//footer end
