@@ -18,18 +18,27 @@ a {
   color: $quaternary;
   font-size: 1rem;
   display: inline-block;
-  &.btn {
-    font-family: $secondaryFont;
-    font-weight: 900;
-    line-height: 32px;
-    letter-spacing: 1px;
-    padding: 5px 12px;
-    color: $quaternary;
-    background-color: $tertiary;
-    &:hover,
-    &:focus {
-      background-color: $accent;
-      color: $secondary;
-    }
+}
+
+button {
+  background-color: transparent;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn {
+  font-family: $secondaryFont;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  color: $quaternary;
+  background-color: $tertiary;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $secondary;
   }
 }
