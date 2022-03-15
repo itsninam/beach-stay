@@ -609,10 +609,6 @@ nav .navBar a:hover, nav .navBar a:focus {
   padding: 3px 0;
 }
 
-section {
-  padding-bottom: 0;
-}
-
 .contactPage {
   background-image: url("../../../assets/contact-image-1.jpg");
   background-position: bottom;
@@ -634,6 +630,7 @@ section {
 
 .contactForm {
   background-color: #fafffe;
+  padding-bottom: 0;
 }
 .contactForm .wrapper {
   display: -webkit-box;
