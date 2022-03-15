@@ -428,9 +428,10 @@ nav .navBar a:hover, nav .navBar a:focus {
 }
 
 .welcomeTag {
+  margin-top: 100px;
   position: absolute;
-  top: 47%;
-  left: 40vw;
+  top: 300px;
+  left: 575px;
   z-index: 10;
 }
 
@@ -609,35 +610,7 @@ nav .navBar a:hover, nav .navBar a:focus {
   padding: 3px 0;
 }
 
-.contactPage {
-  background-image: url("../../../assets/contact-image-1.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-.contactPage .contact {
-  margin-top: 120px;
-}
-.contactPage .contact h1 {
-  font-family: "Lato", sans-serif;
-  font-size: 4.35rem;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 9px;
-  color: white;
-}
-
-.contactForm {
-  background-color: #fafffe;
-  padding-bottom: 0;
-}
-.contactForm .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.contactForm form {
+form {
   padding: 40px;
   width: 60%;
   display: -webkit-box;
@@ -647,20 +620,18 @@ nav .navBar a:hover, nav .navBar a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 20px 20px 0 -3px #50e3c2;
-          box-shadow: 20px 20px 0 -3px #50e3c2;
   background-color: white;
   position: relative;
   top: -150px;
   left: -40px;
 }
-.contactForm form input {
+form input {
   border: none;
   border-bottom: 2px solid #50e3c2;
   padding: 20px 30px;
   width: 100%;
 }
-.contactForm form input[type=text] {
+form input[type=text] {
   margin-right: 25px;
 }
 
@@ -714,6 +685,40 @@ textarea {
   border: 2px solid #50e3c2;
   min-height: 250px;
   resize: none;
+}
+
+.contactPage {
+  background-image: url("../../../assets/contact-image-1.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.contactPage .contactTitle {
+  position: relative;
+  top: 130px;
+}
+.contactPage .contactTitle h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 4.35rem;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 9px;
+  color: white;
+}
+
+.contactForm {
+  background-color: #fafffe;
+  padding-bottom: 0;
+}
+.contactForm .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactForm form {
+  -webkit-box-shadow: 20px 20px 0 -3px #50e3c2;
+          box-shadow: 20px 20px 0 -3px #50e3c2;
 }
 
 .socials p {

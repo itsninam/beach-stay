@@ -5,8 +5,9 @@
   background-size: cover;
   height: 50vh;
 
-  .contact {
-    margin-top: 120px;
+  .contactTitle {
+    position: relative;
+    top: 130px;
 
     h1 {
       font-family: $primaryFont;
@@ -27,51 +28,8 @@
     display: flex;
   }
   form {
-    padding: 40px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
     box-shadow: 20px 20px 0 -3px $accent;
-    background-color: white;
-    position: relative;
-    top: -150px;
-    left: -40px;
-
-    input {
-      border: none;
-      border-bottom: 2px solid $accent;
-      padding: 20px 30px;
-      width: 100%;
-
-      &[type="text"] {
-        margin-right: 25px;
-      }
-    }
   }
-}
-
-input,
-textarea {
-  margin-bottom: 40px;
-
-  &::placeholder {
-    font-family: $primaryFont;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 32px;
-    letter-spacing: 2px;
-  }
-
-  &:focus {
-    border: 3px solid $quaternary;
-  }
-}
-
-textarea {
-  padding: 30px;
-  border: 2px solid $accent;
-  min-height: 250px;
-  resize: none;
 }
 
 .socials {

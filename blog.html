@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beachstays - Blog</title>
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c6524fac39.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="flexContainer">
+          <p class="logo">Beachstays</p>
+          <nav>
+            <ul class="navBar">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./index.html#about">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="blogTitle">
+          <h1>Blog</h1>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <main>
+      <article class="blogPost" id="blog">
+        <div class="wrapper">
+          <div class="blogImgContainer">
+            <img
+              src="./assets/post-image.jpg"
+              alt="Walkway towards a house with light-up windows"
+            />
+          </div>
+          <div class="blogContent">
+            <h2>Five days of ocean seas</h2>
+            <p>Monday January 21th, 2019 by <span>Bora</span></p>
+            <p>
+              Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+              Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+              Vestibulum nec erat ut mi socllicitudin porttitor id sit amet
+              risus. Name tempus vel odio vitae aliquam.
+            </p>
+            <p>
+              In imperdiet eros id lacus vestibulum vestibulum. Suspendisse
+              fermentum sem sagittis ante venenatis egestas quis vel justo.
+              Maecenas semper suscipit nunc, sed aliquam sapien convallis eu.
+              Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor
+              arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+              lacu.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante
+              semper diam molestie, et aligquam erat laoreet. Sed sit amet arcu
+              aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum,
+              volutpat eget semper id, viverra eget nibh. Suspendisse luctus
+              mattis cursus. Nam consectetur ante at nisl hendrerit gravida.
+              Donec vehicula rhoncus mattis. Mauris dignissim sempter mattis.
+              Fusce porttitor a mi at suscipit.
+            </p>
+            <p>
+              Praesent facilisis dolor sapien, vel sodales augue mollis ut.
+              Mauris venenatis magna eu tortor pouere luctus. Aenean tincidunt
+              turpis sed dui aliquam vehicula.
+            </p>
+          </div>
+
+          <section class="comments">
+            <h3>Comments:</h3>
+            <div class="commentContainer">
+              <div class="commentImgContainer">
+                <img src="./assets/comment-image.jpg" alt="Photo of Reyansh" />
+              </div>
+              <div class="commentContent">
+                <h5>Tuesday October 9th, 2019 by Reyansh</h5>
+                <p>
+                  Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                  Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                  sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                  euismod secelerisque ligula. Maecenas eu varius risus.
+                </p>
+              </div>
+            </div>
+            <div class="commentContainer">
+              <div class="commentImgContainer">
+                <img src="./assets/comment-image2.jpg" alt="Photo of Olivia" />
+              </div>
+              <div class="commentContent">
+                <h5>Wednesday October 10th, 2019 by Olivia</h5>
+                <p>
+                  Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                  sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                  euismod secelerisque ligula. Maecenas eu varius risus.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- comments section end -->
+
+          <section class="blogForm">
+            <form action="">
+              <div class="flexContainer">
+                <label for="name" class="sr-only">Enter your name</label>
+                <input type="text" id="name" placeholder="Name" />
+
+                <label for="email" class="sr-only">Enter your email</label>
+                <input type="email" id="email" placeholder="Email address" />
+              </div>
+
+              <label for="message" class="sr-only">Enter your message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Comment"
+              ></textarea>
+              <button class="btn">Post Comment</button>
+            </form>
+          </section>
+          <!-- contact form end -->
+        </div>
+      </article>
+      <!-- article end -->
+
+      <aside class="aside">
+        <div class="wrapper">
+          <div class="mission">
+            <h4>Our mission</h4>
+            <p>
+              Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+              erat a elementum.
+            </p>
+            <a href="#" class="missionLink">Find out more</a>
+          </div>
+          <div class="recentPosts">
+            <h4>Recent Posts</h4>
+            <ul class="postList">
+              <li><a href="#">Donec facilisis tortor ut</a></li>
+              <li><a href="#">Augue lacinia at viverra</a></li>
+              <li><a href="#">Semper sed sapien metus</a></li>
+              <li><a href="#">Scelerisque nec pharetra</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- aside end -->
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <div class="wrapper">
+          <p>Copyright © Juno College for Technology</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
