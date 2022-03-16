@@ -721,6 +721,8 @@ textarea {
           box-shadow: 20px 20px 0 -3px #50e3c2;
   background-color: white;
   left: -40px;
+  width: 65%;
+  padding: 55px;
 }
 
 .socials p {
