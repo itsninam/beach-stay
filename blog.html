@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="blogPage">
       <div class="wrapper">
         <div class="flexContainer">
           <p class="logo">Beachstays</p>
@@ -41,23 +41,24 @@
     </header>
     <!-- header end -->
 
-    <main>
+    <main class="mainBlog">
       <article class="blogPost" id="blog">
-        <div class="wrapper">
+        <div class="container">
           <div class="blogImgContainer">
             <img
               src="./assets/post-image.jpg"
               alt="Walkway towards a house with light-up windows"
             />
           </div>
-          <div class="blogContent">
+
+          <div class="blogContent wrapper">
             <h2>Five days of ocean seas</h2>
             <p>Monday January 21th, 2019 by <span>Bora</span></p>
             <p>
               Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
               Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
               Vestibulum nec erat ut mi socllicitudin porttitor id sit amet
-              risus. Name tempus vel odio vitae aliquam.
+              risus. Nam tempus vel odio vitae aliquam.
             </p>
             <p>
               In imperdiet eros id lacus vestibulum vestibulum. Suspendisse
@@ -83,8 +84,10 @@
               turpis sed dui aliquam vehicula.
             </p>
           </div>
+        </div>
 
-          <section class="comments">
+        <section class="comments">
+          <div class="wrapper">
             <h3>Comments:</h3>
             <div class="commentContainer">
               <div class="commentImgContainer">
@@ -109,14 +112,16 @@
                 <p>
                   Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
                   sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
-                  euismod secelerisque ligula. Maecenas eu varius risus.
+                  euismod secelerisque ligula.
                 </p>
               </div>
             </div>
-          </section>
-          <!-- comments section end -->
+          </div>
+        </section>
+        <!-- comments section end -->
 
-          <section class="blogForm">
+        <section class="blogForm">
+          <div class="wrapper">
             <form action="">
               <div class="flexContainer">
                 <label for="name" class="sr-only">Enter your name</label>
@@ -134,31 +139,35 @@
               ></textarea>
               <button class="btn">Post Comment</button>
             </form>
-          </section>
-          <!-- contact form end -->
-        </div>
+          </div>
+        </section>
+        <!-- contact form end -->
       </article>
       <!-- article end -->
 
-      <aside class="aside">
-        <div class="wrapper">
-          <div class="mission">
-            <h4>Our mission</h4>
-            <p>
-              Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
-              erat a elementum.
-            </p>
-            <a href="#" class="missionLink">Find out more</a>
-          </div>
-          <div class="recentPosts">
-            <h4>Recent Posts</h4>
-            <ul class="postList">
-              <li><a href="#">Donec facilisis tortor ut</a></li>
-              <li><a href="#">Augue lacinia at viverra</a></li>
-              <li><a href="#">Semper sed sapien metus</a></li>
-              <li><a href="#">Scelerisque nec pharetra</a></li>
-            </ul>
-          </div>
+      <aside class="aside wrapper">
+        <div class="asideImgContainer">
+          <img
+            src="./assets/sidebar-image.jpg"
+            alt="Lake house on stilts by the water surrounded by trees"
+          />
+        </div>
+        <div class="mission">
+          <h4>Our mission</h4>
+          <p>
+            Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+            erat a elementum.
+          </p>
+          <a href="#" class="missionLink">Find out more.</a>
+        </div>
+        <div class="recentPosts">
+          <h4>Recent Posts</h4>
+          <ul class="postList">
+            <li><a href="#">Donec facilisis tortor ut</a></li>
+            <li><a href="#">Augue lacinia at viverra</a></li>
+            <li><a href="#">Semper sed sapien metus</a></li>
+            <li><a href="#">Scelerisque nec pharetra</a></li>
+          </ul>
         </div>
       </aside>
       <!-- aside end -->

@@ -3,10 +3,9 @@ form {
   width: 60%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   top: -150px;
-  left: -40px;
 
   input {
     border: none;
@@ -23,6 +22,7 @@ form {
 input,
 textarea {
   margin-bottom: 40px;
+  background-color: transparent;
 
   &::placeholder {
     font-family: $primaryFont;
