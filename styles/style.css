@@ -801,6 +801,7 @@ textarea {
 .mainBlog .articleContainer .blogPost {
   border-right: 3px solid #50e3c2;
   border-bottom: 3px solid #50e3c2;
+  padding-right: 15px;
 }
 .mainBlog .blogImgContainer {
   margin-bottom: 50px;
