@@ -1,19 +1,39 @@
 @media (max-width: 1340px) {
+  //header start
   .welcomeTag {
-    left: 20%;
+    left: 10%;
 
     h1 {
       font-size: 5rem;
     }
+
     span {
       font-size: 3rem;
     }
   }
 
+  //nav bar start
+  nav {
+    .navBar {
+      justify-content: space-between;
+
+      li {
+        margin-left: 0;
+      }
+
+      a {
+        padding: 10px 10px 10px 0;
+      }
+    }
+  }
+  //navbar end
+  //header end
+
   //plan location start
   .flexContainer {
     flex-direction: column;
   }
+
   .top {
     .planAhead {
       width: 100%;
@@ -43,23 +63,36 @@
 }
 
 @media (max-width: 790px) {
-  //home page header start
+  // home page header start
   header {
-    height: 100vh;
+    height: 90vh;
     .flexContainer {
       flex-direction: column;
     }
-    .welcomeTag {
-      h1 {
-        font-size: 3.5rem;
-      }
+  }
+
+  .welcomeTag {
+    top: 250px;
+
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    span {
+      font-size: 1.8rem;
     }
   }
 
+  .headerImgContainer {
+    display: none;
+  }
+
+  //nav bar start
   nav {
     .navBar {
       flex-direction: column;
       text-align: center;
+
       li {
         margin-left: 0;
       }
@@ -74,10 +107,7 @@
       }
     }
   }
-
-  .headerImgContainer {
-    display: none;
-  }
+  //navbar end
   //home page header end
 
   //about section start
@@ -87,6 +117,7 @@
 
   .about {
     padding: 50px 0;
+
     .textContainer {
       max-width: 100%;
       margin-right: 0;
@@ -131,6 +162,18 @@
 }
 
 @media (max-width: 320px) {
+  .welcomeTag {
+    top: 200px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
   .iconTitle {
     .icon {
       left: -45px;
