@@ -752,6 +752,9 @@ textarea {
   color: #2c2c2c;
   font-size: 1rem;
 }
+.socials .icons a:hover, .socials .icons a:focus {
+  color: #50e3c2;
+}
 
 .contactInfo {
   margin-left: 80px;
@@ -1033,5 +1036,46 @@ form {
     font-size: 1rem;
     height: 35px;
     width: 35px;
+  }
+}
+@media (max-width: 1340px) {
+  .contactForm form {
+    position: static;
+    width: 100%;
+    -webkit-box-shadow: 15px 15px 0 -2px #50e3c2;
+            box-shadow: 15px 15px 0 -2px #50e3c2;
+    border: 1px solid #50e3c2;
+    padding: 30px;
+  }
+  .contactForm .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contactInfo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contactPage {
+    height: 60vh;
+  }
+  .contactPage .contactTitle {
+    position: static;
+    text-align: left;
+  }
+  .contactPage .contactTitle h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .contactPage {
+    height: 70vh;
+  }
+  .contactPage .contactTitle h1 {
+    font-size: 1.6rem;
   }
 }

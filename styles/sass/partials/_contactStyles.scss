@@ -50,6 +50,11 @@
     a {
       color: $primary;
       font-size: 1rem;
+
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
     }
   }
 }

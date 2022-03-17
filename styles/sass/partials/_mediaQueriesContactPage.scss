@@ -1,0 +1,47 @@
+@media (max-width: 1340px) {
+  .contactForm {
+    form {
+      position: static;
+      width: 100%;
+      box-shadow: 15px 15px 0 -2px $accent;
+      border: 1px solid $accent;
+      padding: 30px;
+    }
+
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .contactInfo {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactPage {
+    height: 60vh;
+
+    .contactTitle {
+      position: static;
+      text-align: left;
+
+      h1 {
+        margin-top: 30px;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .contactPage {
+    height: 70vh;
+
+    .contactTitle {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
