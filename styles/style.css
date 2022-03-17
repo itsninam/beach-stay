@@ -456,8 +456,6 @@ nav .navBar a:hover, nav .navBar a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .about {
@@ -465,8 +463,8 @@ nav .navBar a:hover, nav .navBar a:focus {
 }
 
 .about .textContainer {
-  max-width: calc(65% - 20px);
-  margin-right: 20px;
+  max-width: calc(65% - 30px);
+  margin-right: 30px;
 }
 .about .aboutImgContainer {
   min-width: 25%;
@@ -490,14 +488,18 @@ nav .navBar a:hover, nav .navBar a:focus {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.infoFlexContainer .infoContainer {
-  max-width: 40%;
+.infoFlexContainer .topContainer,
+.infoFlexContainer .bottomContainer {
+  width: calc(40% - 20px);
+  margin-right: 20px;
+}
+.infoFlexContainer .topContainer .infoContainer,
+.infoFlexContainer .bottomContainer .infoContainer {
   position: relative;
 }
-.infoFlexContainer .infoContainer .iconTitle {
+.infoFlexContainer .topContainer .iconTitle,
+.infoFlexContainer .bottomContainer .iconTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,4 +881,128 @@ textarea {
 form {
   width: 100%;
   padding: 0;
+}
+
+@media (max-width: 1340px) {
+  .welcomeTag {
+    left: 20%;
+  }
+  .welcomeTag h1 {
+    font-size: 5rem;
+  }
+  .welcomeTag span {
+    font-size: 3rem;
+  }
+
+  .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .top .planAhead {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .top .planAhead .contentContainer {
+    width: 90%;
+  }
+
+  .bottom .newLocations {
+    width: 100%;
+  }
+  .bottom .newLocations .contentContainer {
+    text-align: left;
+    width: 90%;
+  }
+  .bottom .rightImgContainer {
+    display: none;
+  }
+}
+@media (max-width: 790px) {
+  header {
+    height: 100vh;
+  }
+  header .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .welcomeTag h1 {
+    font-size: 3.5rem;
+  }
+
+  nav .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav .navBar li {
+    margin-left: 0;
+  }
+  nav .navBar a {
+    padding: 15px;
+  }
+  nav .navBar a:hover, nav .navBar a:focus {
+    background-color: #063974;
+  }
+
+  .headerImgContainer {
+    display: none;
+  }
+
+  .mainFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+  .about .textContainer {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .aboutImgContainer {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .imgGallery .mainFlexContainer li {
+    margin: 10px auto;
+    width: 60%;
+  }
+
+  .infoFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoFlexContainer .topContainer,
+.infoFlexContainer .bottomContainer {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .freeTrip {
+    padding: 50px 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .iconTitle .icon {
+    left: -45px;
+    font-size: 1rem;
+    height: 35px;
+    width: 35px;
+  }
 }

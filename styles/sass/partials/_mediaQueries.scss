@@ -1,0 +1,142 @@
+@media (max-width: 1340px) {
+  .welcomeTag {
+    left: 20%;
+
+    h1 {
+      font-size: 5rem;
+    }
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  //plan location start
+  .flexContainer {
+    flex-direction: column;
+  }
+  .top {
+    .planAhead {
+      width: 100%;
+      margin-bottom: 30px;
+
+      .contentContainer {
+        width: 90%;
+      }
+    }
+  }
+
+  .bottom {
+    .newLocations {
+      width: 100%;
+
+      .contentContainer {
+        text-align: left;
+        width: 90%;
+      }
+    }
+
+    .rightImgContainer {
+      display: none;
+    }
+  }
+  //plan location end
+}
+
+@media (max-width: 790px) {
+  //home page header start
+  header {
+    height: 100vh;
+    .flexContainer {
+      flex-direction: column;
+    }
+    .welcomeTag {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  nav {
+    .navBar {
+      flex-direction: column;
+      text-align: center;
+      li {
+        margin-left: 0;
+      }
+
+      a {
+        padding: 15px;
+
+        &:hover,
+        &:focus {
+          background-color: $tertiary;
+        }
+      }
+    }
+  }
+
+  .headerImgContainer {
+    display: none;
+  }
+  //home page header end
+
+  //about section start
+  .mainFlexContainer {
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 50px 0;
+    .textContainer {
+      max-width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  .aboutImgContainer {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  //about section end
+
+  //image gallery start
+  .imgGallery {
+    .mainFlexContainer {
+      li {
+        margin: 10px auto;
+        width: 60%;
+      }
+    }
+  }
+  //image gallery end
+
+  //information start
+  .infoFlexContainer {
+    flex-direction: column;
+
+    .topContainer,
+    .bottomContainer {
+      width: 80%;
+      margin-left: auto;
+    }
+  }
+  //information end
+
+  //footer start
+  .freeTrip {
+    padding: 50px 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .iconTitle {
+    .icon {
+      left: -45px;
+      font-size: 1rem;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
