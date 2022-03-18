@@ -704,10 +704,11 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
+  position: relative;
 }
 .contactPage .contactTitle {
-  position: relative;
-  top: 130px;
+  position: absolute;
+  bottom: 130px;
 }
 .contactPage .contactTitle h1 {
   font-family: "Lato", sans-serif;
@@ -1038,7 +1039,14 @@ form {
     width: 35px;
   }
 }
-@media (max-width: 1340px) {
+@media (max-width: 950px) {
+  .contactPage .contactTitle {
+    bottom: 20px;
+  }
+  .contactPage .contactTitle h1 {
+    font-size: 3.2rem;
+  }
+
   .contactForm form {
     position: static;
     width: 100%;
@@ -1058,20 +1066,12 @@ form {
     margin-left: 0;
   }
 }
-@media (max-width: 768px) {
-  .contactPage {
-    height: 60vh;
-  }
-  .contactPage .contactTitle {
-    position: static;
-    text-align: left;
-  }
+@media (max-width: 568px) {
   .contactPage .contactTitle h1 {
-    margin-top: 30px;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .contactPage {
     height: 70vh;
   }

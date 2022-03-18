@@ -4,10 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
+  position: relative;
 
   .contactTitle {
-    position: relative;
-    top: 130px;
+    position: absolute;
+    bottom: 130px;
 
     h1 {
       font-family: $primaryFont;
