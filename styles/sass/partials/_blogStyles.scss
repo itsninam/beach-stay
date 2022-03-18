@@ -3,11 +3,12 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 
   .blogTitle {
+    margin-top: 20vh;
     position: relative;
-    top: 130px;
+    z-index: 10;
 
     h1 {
       font-family: $primaryFont;
@@ -15,6 +16,7 @@
       font-weight: 700;
       line-height: 58px;
       letter-spacing: 9px;
+      margin-bottom: 35px;
       color: white;
     }
   }
@@ -27,9 +29,8 @@
   align-items: flex-start;
 
   .articleContainer {
-    position: relative;
-    top: -150px;
-    width: 50%;
+    width: 100%;
+    max-width: 900px;
 
     .blogPost {
       border-right: 3px solid $accent;
@@ -39,15 +40,20 @@
   }
 
   .blogImgContainer {
-    margin-bottom: 50px;
+    position: relative;
+    top: -150px;
+
     img {
       box-shadow: 20px 20px 0 -3px $accent;
     }
   }
 
   .blogContent {
+    width: 80%;
+    margin: 0 auto;
+
     h2 {
-      margin-bottom: -3px;
+      margin: -95px 0 -3px 0;
     }
 
     p:first-of-type {
@@ -62,6 +68,9 @@
 }
 
 .comments {
+  width: 90%;
+  margin: 0 auto;
+
   h3 {
     color: $primary;
     margin-bottom: 25px;
@@ -70,6 +79,7 @@
   .commentContainer {
     display: flex;
     justify-content: space-between;
+
     .commentContent {
       width: calc(85% - 10px);
       margin-left: 10px;
@@ -81,8 +91,10 @@
 .aside {
   background-color: white;
   position: relative;
-  top: 100px;
-  max-width: 350px;
+  top: 120px;
+  max-width: 330px;
+  width: 100%;
+  margin-left: 50px;
   box-shadow: -15px 25px 0 3px white;
 
   a,
@@ -103,6 +115,7 @@
   p {
     margin-bottom: 0;
   }
+
   a {
     color: $secondary;
   }
@@ -111,6 +124,7 @@
 .recentPosts {
   .postList {
     padding: 10px;
+
     li {
       color: $accent;
       display: list-item;
@@ -126,6 +140,7 @@
 }
 
 form {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding: 0;
 }
