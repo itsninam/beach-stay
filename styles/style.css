@@ -357,6 +357,11 @@ p {
   margin-bottom: 20px;
 }
 
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -789,24 +794,26 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.mainBlog .blogPost {
+.mainBlog .articleContainer {
   position: relative;
-  top: -80px;
-  width: calc(65% - 30px);
-  margin-right: 30px;
+  top: -150px;
+  width: 50%;
 }
-.mainBlog .blogPost .container {
+.mainBlog .articleContainer .blogPost {
   border-right: 3px solid #50e3c2;
   border-bottom: 3px solid #50e3c2;
-  max-width: 80%;
-  padding: 0 15px 15px 0;
+  padding-right: 15px;
+}
+.mainBlog .blogImgContainer {
+  margin-bottom: 50px;
 }
 .mainBlog .blogImgContainer img {
   -webkit-box-shadow: 20px 20px 0 -3px #50e3c2;
           box-shadow: 20px 20px 0 -3px #50e3c2;
-  margin-bottom: 50px;
 }
 .mainBlog .blogContent h2 {
   margin-bottom: -3px;
@@ -838,27 +845,26 @@ textarea {
 }
 
 .aside {
-  max-width: 23%;
-  position: absolute;
-  right: 0;
-  top: 150px;
   background-color: white;
-  padding: 15px 0 15px 15px;
-}
-.aside .asideImgContainer {
-  border: 1px solid green;
-  max-width: 90%;
   position: relative;
-  top: -30px;
-  right: 0;
+  top: 100px;
+  max-width: 350px;
+  -webkit-box-shadow: -15px 25px 0 3px white;
+          box-shadow: -15px 25px 0 3px white;
 }
-.aside a {
+.aside a,
+.aside .postList a {
   line-height: 32px;
   letter-spacing: 2px;
 }
+.aside a:hover, .aside a:focus,
+.aside .postList a:hover,
+.aside .postList a:focus {
+  color: #50e3c2;
+}
 
 .mission {
-  margin-bottom: 25px;
+  margin: 15px 0 25px 0;
 }
 .mission p {
   margin-bottom: 0;
