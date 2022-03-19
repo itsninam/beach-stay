@@ -638,7 +638,7 @@ form {
           flex-direction: column;
   background-color: transparent;
   position: relative;
-  top: -150px;
+  top: -140px;
 }
 form input {
   border: none;
@@ -709,11 +709,9 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  position: relative;
 }
 .contactPage .contactTitle {
-  position: absolute;
-  bottom: 130px;
+  margin-top: 15vh;
 }
 .contactPage .contactTitle h1 {
   font-family: "Lato", sans-serif;
@@ -738,7 +736,6 @@ textarea {
           box-shadow: 20px 20px 0 -3px #50e3c2;
   background-color: white;
   left: -40px;
-  width: 65%;
   padding: 55px;
 }
 
@@ -772,10 +769,10 @@ textarea {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 50vh;
 }
 .blogPage .blogTitle {
-  margin-top: 20vh;
+  margin-top: 15vh;
   position: relative;
   z-index: 10;
 }
@@ -900,7 +897,7 @@ textarea {
   padding: 5px 0;
 }
 
-form {
+.blogForm form {
   width: 90%;
   margin: 0 auto;
   padding: 0;
@@ -1060,13 +1057,9 @@ form {
   }
 }
 @media (max-width: 950px) {
-  .contactPage .contactTitle {
-    bottom: 20px;
+  .contactForm {
+    padding: 0;
   }
-  .contactPage .contactTitle h1 {
-    font-size: 3.2rem;
-  }
-
   .contactForm form {
     position: static;
     width: 100%;
@@ -1074,6 +1067,7 @@ form {
             box-shadow: 15px 15px 0 -2px #50e3c2;
     border: 1px solid #50e3c2;
     padding: 30px;
+    margin-top: 50px;
   }
   .contactForm .wrapper {
     -webkit-box-orient: vertical;
@@ -1086,17 +1080,13 @@ form {
     margin-left: 0;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 428px) and (max-height: 930px) {
+  .contactPage {
+    height: auto;
+  }
   .contactPage .contactTitle h1 {
     font-size: 3rem;
-  }
-}
-@media (max-width: 380px) {
-  .contactPage {
-    height: 70vh;
-  }
-  .contactPage .contactTitle h1 {
-    font-size: 1.6rem;
+    line-height: 65px;
   }
 }
 @media (max-width: 1250px) {

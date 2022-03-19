@@ -1,21 +1,14 @@
 @media (max-width: 950px) {
-  .contactPage {
-    .contactTitle {
-      bottom: 20px;
-
-      h1 {
-        font-size: 3.2rem;
-      }
-    }
-  }
-
   .contactForm {
+    padding: 0;
+
     form {
       position: static;
       width: 100%;
       box-shadow: 15px 15px 0 -2px $accent;
       border: 1px solid $accent;
       padding: 30px;
+      margin-top: 50px;
     }
 
     .wrapper {
@@ -28,23 +21,14 @@
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 428px) and (max-height: 930px) {
   .contactPage {
+    height: auto;
+
     .contactTitle {
       h1 {
         font-size: 3rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 380px) {
-  .contactPage {
-    height: 70vh;
-
-    .contactTitle {
-      h1 {
-        font-size: 1.6rem;
+        line-height: 65px;
       }
     }
   }

@@ -4,11 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  position: relative;
 
   .contactTitle {
-    position: absolute;
-    bottom: 130px;
+    margin-top: 15vh;
 
     h1 {
       font-family: $primaryFont;
@@ -32,8 +30,8 @@
     box-shadow: 20px 20px 0 -3px $accent;
     background-color: white;
     left: -40px;
-    width: 65%;
     padding: 55px;
+    // margin-top: 50px;
   }
 }
 
