@@ -557,56 +557,62 @@ nav .navBar a:hover, nav .navBar a:focus {
 .planLocations {
   background-color: #d2f9f1;
 }
+.planLocations h2 {
+  color: #063974;
+}
 
-.top .leftImgContainer {
+.planLocations .locationsFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.planLocations .leftImgContainer,
+.planLocations .newLocations,
+.planLocations .planAhead,
+.planLocations .rightImgContainer {
+  width: 50%;
+}
+.planLocations .contentContainer {
+  width: 80%;
+}
+
+.planAhead {
   position: relative;
-  top: -90px;
+  right: -60px;
+}
+
+.newLocations {
+  position: relative;
+  left: -60px;
+}
+.newLocations .contentContainer {
+  margin-left: auto;
+  text-align: right;
+}
+
+.leftImgContainer {
+  position: relative;
+  top: -80px;
+  left: -80px;
   margin-right: 30px;
 }
-.top .leftImgContainer img {
-  -webkit-box-shadow: 20px 20px 0 3px #50e3c2;
-          box-shadow: 20px 20px 0 3px #50e3c2;
-}
-.top .planAhead {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-}
-.top .planAhead .contentContainer {
-  width: 70%;
+.leftImgContainer img {
+  -webkit-box-shadow: 15px 15px 0 3px #50e3c2;
+          box-shadow: 15px 15px 0 3px #50e3c2;
 }
 
-.bottom .newLocations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-}
-.bottom .newLocations .contentContainer {
-  text-align: right;
-  width: 70%;
-}
-.bottom .rightImgContainer {
+.rightImgContainer {
   margin-left: 15px;
   position: relative;
-  bottom: -90px;
+  bottom: -80px;
+  right: -80px;
 }
-.bottom .rightImgContainer img {
-  -webkit-box-shadow: -20px 20px 0 -3px #50e3c2;
-          box-shadow: -20px 20px 0 -3px #50e3c2;
+.rightImgContainer img {
+  -webkit-box-shadow: -15px 15px 0 -3px #50e3c2;
+          box-shadow: -15px 15px 0 -3px #50e3c2;
 }
 
 .bottomBanner {
@@ -939,27 +945,41 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
-  .top .leftImgContainer {
-    width: 95%;
+}
+@media (max-width: 1000px) {
+  .planLocations {
+    padding-top: 0;
   }
-  .top .planAhead {
+  .planLocations .locationsFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .planLocations .leftImgContainer,
+.planLocations .newLocations,
+.planLocations .planAhead,
+.planLocations .rightImgContainer {
     width: 100%;
-    margin-bottom: 30px;
+    position: static;
+    text-align: center;
   }
-  .top .planAhead .contentContainer {
-    width: 90%;
-  }
-
-  .bottom .newLocations {
-    width: 100%;
-  }
-  .bottom .newLocations .contentContainer {
-    text-align: left;
-    width: 90%;
-  }
-  .bottom .rightImgContainer {
+  .planLocations .rightImgContainer {
     display: none;
+  }
+  .planLocations .leftImgContainer {
+    margin: 0 auto 30px 0;
+  }
+  .planLocations .leftImgContainer img {
+    -webkit-box-shadow: 12px 12px 0 -1px #50e3c2;
+            box-shadow: 12px 12px 0 -1px #50e3c2;
+  }
+  .planLocations .contentContainer {
+    width: 100%;
+    text-align: left;
+  }
+  .planLocations .planAhead {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 790px) {
@@ -1061,7 +1081,7 @@ textarea {
     width: 35px;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 428px) {
   p {
     font-size: 0.8rem;
     letter-spacing: 0px;

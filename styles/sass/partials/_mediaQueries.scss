@@ -29,42 +29,52 @@
   //navbar end
   //header end
 
-  //plan location start
   .flexContainer {
     flex-direction: column;
   }
+}
 
-  .top {
-    .leftImgContainer {
-      width: 95%;
+@media (max-width: 1000px) {
+  //plan locations start
+  .planLocations {
+    padding-top: 0;
+
+    .locationsFlexContainer {
+      flex-direction: column;
     }
 
-    .planAhead {
+    .leftImgContainer,
+    .newLocations,
+    .planAhead,
+    .rightImgContainer {
       width: 100%;
-      margin-bottom: 30px;
-
-      .contentContainer {
-        width: 90%;
-      }
-    }
-  }
-
-  .bottom {
-    .newLocations {
-      width: 100%;
-
-      .contentContainer {
-        text-align: left;
-        width: 90%;
-      }
+      position: static;
+      text-align: center;
     }
 
     .rightImgContainer {
       display: none;
     }
+
+    .leftImgContainer {
+      margin: 0 auto 30px 0;
+
+      img {
+        box-shadow: 12px 12px 0 -1px $accent;
+      }
+    }
+
+    .contentContainer {
+      width: 100%;
+      text-align: left;
+    }
+
+    .planAhead {
+      margin-bottom: 30px;
+    }
   }
 }
-//plan location end
+//plan locations end
 
 @media (max-width: 790px) {
   // home page header start
@@ -192,7 +202,7 @@
   //information end
 }
 
-@media (max-width: 415px) {
+@media (max-width: 428px) {
   //general p styles
   p {
     font-size: 0.8rem;
