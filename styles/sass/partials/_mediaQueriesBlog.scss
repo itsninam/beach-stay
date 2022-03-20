@@ -27,6 +27,7 @@
 
   .comments {
     margin-bottom: 100px;
+    padding-bottom: 0;
 
     .commentContainer {
       flex-direction: column;
@@ -59,7 +60,7 @@
   input,
   textarea {
     &::placeholder {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding-bottom: 10px;
     }
   }

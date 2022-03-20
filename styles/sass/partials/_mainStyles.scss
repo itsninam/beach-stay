@@ -6,6 +6,7 @@
 // about section start
 .about {
   padding: 250px 0 80px 0;
+  background-color: $quaternary;
 }
 
 .about {
@@ -13,14 +14,15 @@
     max-width: calc(65% - 30px);
     margin-right: 30px;
   }
+
   .aboutImgContainer {
     min-width: 25%;
+
     img {
       box-shadow: -20px 20px 0 -3px $accent;
     }
   }
 }
-
 //about section end
 
 // image gallery start
@@ -37,6 +39,10 @@
 //image gallery end
 
 // information start
+.information {
+  background-color: $quaternary;
+}
+
 .infoFlexContainer {
   display: flex;
   justify-content: space-around;
@@ -107,6 +113,7 @@
       box-shadow: 20px 20px 0 3px $accent;
     }
   }
+
   .planAhead {
     display: flex;
     align-items: center;
@@ -131,6 +138,7 @@
       width: 70%;
     }
   }
+
   .rightImgContainer {
     margin-left: 15px;
     position: relative;

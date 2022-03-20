@@ -5,6 +5,7 @@ html {
 body {
   font-family: $primaryFont;
   font-size: $baseFontSize;
+  font-weight: 400;
   color: $primary;
 }
 
@@ -90,6 +91,6 @@ h5 {
 
 p {
   line-height: 32px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
