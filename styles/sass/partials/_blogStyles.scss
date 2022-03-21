@@ -1,3 +1,4 @@
+//header starts here
 .blogPage {
   background-image: url("../../../assets/blog-image-1.jpg");
   background-position: bottom;
@@ -6,9 +7,7 @@
   height: 50vh;
 
   .blogTitle {
-    margin-top: 15vh;
-    // position: relative;
-    // z-index: 10;
+    margin-top: 18vh;
 
     h1 {
       font-family: $primaryFont;
@@ -20,7 +19,9 @@
     }
   }
 }
+//header ends here
 
+//blog post section starts here
 .mainBlog {
   background-color: $quaternary;
   display: flex;
@@ -66,7 +67,9 @@
     }
   }
 }
+//blog post section ends here
 
+//comments section start here
 .comments {
   width: 90%;
   margin: 0 auto;
@@ -87,7 +90,19 @@
     }
   }
 }
+//comment section ends here
 
+//blog contact form starts here
+.blogForm {
+  form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+//blog contact form ends here
+
+//aside starts here
 .aside {
   background-color: white;
   position: relative;
@@ -138,11 +153,4 @@
     }
   }
 }
-
-.blogForm {
-  form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
+//aside ends here

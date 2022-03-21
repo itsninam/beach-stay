@@ -379,8 +379,7 @@ section {
   padding: 50px 0;
 }
 
-a,
-.mobileMenu {
+a {
   color: #fafffe;
   font-size: 1rem;
   display: inline-block;
@@ -423,6 +422,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav {
@@ -452,10 +454,12 @@ nav .mobileMenu {
   font-size: 0.8rem;
   background-color: #063974;
   border: 2px solid #50e3c2;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px 15px;
   display: none;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 nav .mobileMenu:hover, nav .mobileMenu:focus {
@@ -744,7 +748,7 @@ textarea {
   height: 50vh;
 }
 .contactPage .contactTitle {
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 .contactPage .contactTitle h1 {
   font-family: "Lato", sans-serif;
@@ -770,6 +774,12 @@ textarea {
   background-color: white;
   left: -40px;
   padding: 55px;
+  margin-top: 30px;
+}
+
+.contactInfo {
+  margin-left: 80px;
+  margin-top: 50px;
 }
 
 .socials p {
@@ -792,11 +802,6 @@ textarea {
   color: #50e3c2;
 }
 
-.contactInfo {
-  margin-left: 80px;
-  margin-top: 50px;
-}
-
 .blogPage {
   background-image: url("../../../assets/blog-image-1.jpg");
   background-position: bottom;
@@ -805,7 +810,7 @@ textarea {
   height: 50vh;
 }
 .blogPage .blogTitle {
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 .blogPage .blogTitle h1 {
   font-family: "Lato", sans-serif;
@@ -883,6 +888,12 @@ textarea {
   margin-bottom: 60px;
 }
 
+.blogForm form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .aside {
   background-color: white;
   position: relative;
@@ -926,12 +937,6 @@ textarea {
 .recentPosts .postList a {
   color: #2c2c2c;
   padding: 5px 0;
-}
-
-.blogForm form {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
 }
 
 @media (max-width: 1340px) {
@@ -981,7 +986,7 @@ textarea {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 805px) {
   header {
     height: 60vh;
   }
@@ -1196,20 +1201,21 @@ textarea {
     margin: 0;
   }
 
-  .aside {
-    width: 90%;
-  }
-  .aside a,
-.aside .postList a {
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-  }
-
   form {
     width: 95%;
   }
+  form .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   form input {
     padding-bottom: 15px;
+    width: 95%;
+  }
+  form input[type=text] {
+    margin-right: 0;
   }
 
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -1236,6 +1242,15 @@ textarea {
 textarea::placeholder {
     font-size: 0.9rem;
     padding-bottom: 10px;
+  }
+
+  .aside {
+    width: 90%;
+  }
+  .aside a,
+.aside .postList a {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 428px) and (max-height: 930px) {

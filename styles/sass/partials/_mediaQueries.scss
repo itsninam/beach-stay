@@ -11,40 +11,6 @@
       font-size: 3rem;
     }
   }
-
-  //nav bar start
-  nav {
-    .navBar {
-      // border: 2px solid yellow;
-      // // flex-direction: column;
-      // // justify-content: space-between;
-      // align-items: center;
-      // text-align: center;
-      // background-color: $tertiary;
-      // // padding: 10px 0;
-      // // position: absolute;
-      // z-index: 20;
-      // width: 90%;
-
-      li {
-        // margin-left: 0;
-      }
-
-      a {
-        // padding: 10px 10px 10px 0;
-      }
-    }
-
-    // .hidden {
-    //   display: none;
-    // }
-  }
-  //navbar end
-  //header end
-
-  .flexContainer {
-    // flex-direction: column;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -89,7 +55,7 @@
 }
 //plan locations end
 
-@media (max-width: 790px) {
+@media (max-width: 805px) {
   // home page header start
   header {
     height: 60vh;

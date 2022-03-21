@@ -1,3 +1,4 @@
+//mobile drop-down menu function
 const mobileMenu = document.querySelector(".mobileMenu");
 const navBar = document.querySelector(".hidden");
 

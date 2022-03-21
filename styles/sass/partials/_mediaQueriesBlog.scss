@@ -1,12 +1,15 @@
 @media (max-width: 1250px) {
+  //blog post section
   .mainBlog {
     flex-direction: column;
   }
 
+  //blog form section
   .blogForm {
     padding-bottom: 0;
   }
 
+  //aside
   .aside {
     position: static;
     margin: -100px auto 150px auto;
@@ -14,6 +17,7 @@
 }
 
 @media (max-width: 575px) {
+  //blog post section starts here
   .mainBlog {
     .blogContent {
       width: 90%;
@@ -30,7 +34,9 @@
       }
     }
   }
+  //blog post section ends here
 
+  //comments section starts here
   .comments {
     margin-bottom: 100px;
     padding-bottom: 0;
@@ -44,22 +50,23 @@
       }
     }
   }
+  //comments section ends here
 
-  .aside {
-    width: 90%;
-
-    a,
-    .postList a {
-      font-size: 0.8rem;
-      letter-spacing: 0.5px;
-    }
-  }
-
+  //blog contact form starts here
   form {
     width: 95%;
 
+    .flexContainer {
+      flex-direction: column;
+    }
+
     input {
       padding-bottom: 15px;
+      width: 95%;
+
+      &[type="text"] {
+        margin-right: 0;
+      }
     }
   }
 
@@ -70,9 +77,23 @@
       padding-bottom: 10px;
     }
   }
+  //blog contact form ends here
+
+  //aside starts here
+  .aside {
+    width: 90%;
+
+    a,
+    .postList a {
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+  }
+  //aside ends here
 }
 
 @media (max-width: 428px) and (max-height: 930px) {
+  //header starts here
   .blogPage {
     height: auto;
 
@@ -85,3 +106,4 @@
     }
   }
 }
+//header ends here

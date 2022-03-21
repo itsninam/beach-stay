@@ -1,3 +1,4 @@
+// header starts here
 .contactPage {
   background-image: url("../../../assets/contact-image-1.jpg");
   background-position: bottom;
@@ -6,7 +7,7 @@
   height: 50vh;
 
   .contactTitle {
-    margin-top: 15vh;
+    margin-top: 18vh;
 
     h1 {
       font-family: $primaryFont;
@@ -18,7 +19,9 @@
     }
   }
 }
+//header ends here
 
+//contact form starts here
 .contactForm {
   background-color: $quaternary;
   padding-bottom: 0;
@@ -26,18 +29,28 @@
   .wrapper {
     display: flex;
   }
+
   form {
     box-shadow: 20px 20px 0 -3px $accent;
     background-color: white;
     left: -40px;
     padding: 55px;
+    margin-top: 30px;
   }
+}
+//contact form ends here
+
+//socials start here
+.contactInfo {
+  margin-left: 80px;
+  margin-top: 50px;
 }
 
 .socials {
   p {
     font-weight: 700;
   }
+
   .icons {
     display: flex;
 
@@ -45,6 +58,7 @@
       margin-right: 15px;
       margin-bottom: 10px;
     }
+
     a {
       color: $primary;
       font-size: 1rem;
@@ -56,8 +70,4 @@
     }
   }
 }
-
-.contactInfo {
-  margin-left: 80px;
-  margin-top: 50px;
-}
+//socials end here
