@@ -13,24 +13,43 @@ header {
 
 //navigation styles
 nav {
+  display: flex;
+
   .navBar {
     display: flex;
 
     li {
       margin-left: 30px;
     }
+  }
 
-    a {
-      line-height: 29px;
-      letter-spacing: 1px;
-      font-weight: 400;
-      padding: 8px 0 8px 20px;
-      text-transform: uppercase;
+  a {
+    line-height: 29px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 8px 0 8px 20px;
+    text-transform: uppercase;
 
-      &:hover,
-      &:focus {
-        color: $accent;
-      }
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  .mobileMenu {
+    font-size: 0.8rem;
+    background-color: $tertiary;
+    border: 2px solid $accent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    display: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $quinary;
+      color: $tertiary;
     }
   }
 }

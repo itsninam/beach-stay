@@ -7,8 +7,8 @@
 
   .blogTitle {
     margin-top: 15vh;
-    position: relative;
-    z-index: 10;
+    // position: relative;
+    // z-index: 10;
 
     h1 {
       font-family: $primaryFont;
@@ -16,7 +16,6 @@
       font-weight: 700;
       line-height: 58px;
       letter-spacing: 9px;
-      margin-bottom: 35px;
       color: white;
     }
   }
@@ -41,6 +40,7 @@
 
   .blogImgContainer {
     position: relative;
+    margin-top: 30px;
     top: -150px;
 
     img {

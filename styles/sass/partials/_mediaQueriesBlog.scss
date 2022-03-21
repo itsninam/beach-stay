@@ -13,14 +13,20 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 575px) {
   .mainBlog {
     .blogContent {
       width: 90%;
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 40px;
+      }
+    }
+
+    .articleContainer {
+      .blogPost {
+        padding-right: 0;
       }
     }
   }
@@ -71,15 +77,11 @@
     height: auto;
 
     .blogTitle {
+      margin-bottom: 90px;
+
       h1 {
         font-size: 3.5rem;
       }
-    }
-  }
-
-  .mainBlog {
-    .blogImgContainer {
-      margin-top: 75px;
     }
   }
 }
