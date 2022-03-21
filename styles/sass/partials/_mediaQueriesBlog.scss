@@ -19,6 +19,12 @@
 @media (max-width: 575px) {
   //blog post section starts here
   .mainBlog {
+    .articleContainer {
+      .blogPost {
+        padding-right: 0;
+      }
+    }
+
     .blogContent {
       width: 90%;
 
@@ -27,19 +33,12 @@
         line-height: 40px;
       }
     }
-
-    .articleContainer {
-      .blogPost {
-        padding-right: 0;
-      }
-    }
   }
   //blog post section ends here
 
   //comments section starts here
   .comments {
-    margin-bottom: 100px;
-    padding-bottom: 0;
+    margin-bottom: 50px;
 
     .commentContainer {
       flex-direction: column;

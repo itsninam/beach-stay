@@ -47,26 +47,26 @@
 }
 
 .socials {
-  p {
+  margin-bottom: 20px;
+
+  a {
     font-weight: 700;
+    color: $primary;
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
   }
 
   .icons {
     display: flex;
 
     li {
-      margin-right: 15px;
+      margin-right: 20px;
       margin-bottom: 10px;
-    }
-
-    a {
-      color: $primary;
-      font-size: 1rem;
-
-      &:hover,
-      &:focus {
-        color: $accent;
-      }
     }
   }
 }

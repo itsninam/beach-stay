@@ -39,11 +39,11 @@ nav {
 
   .mobileMenu {
     font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
     background-color: $tertiary;
     border: 2px solid $accent;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     padding: 10px 15px;
     display: none;
     margin-bottom: 20px;

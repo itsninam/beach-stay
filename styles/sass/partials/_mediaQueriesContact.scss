@@ -1,4 +1,16 @@
 @media (max-width: 950px) {
+  //header starts here
+  .contactPage {
+    height: auto;
+
+    .contactTitle {
+      h1 {
+        line-height: 70px;
+      }
+    }
+  }
+  //header ends here
+
   //contact form starts here
   .contactForm {
     padding: 0;
@@ -33,7 +45,15 @@
     .contactTitle {
       h1 {
         font-size: 3rem;
-        line-height: 65px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .socials {
+    .icons {
+      li {
+        margin-right: 35px;
       }
     }
   }
