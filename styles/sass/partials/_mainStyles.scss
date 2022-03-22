@@ -157,12 +157,16 @@
   right: -80px;
 
   img {
-    box-shadow: -15px 15px 0 -3px $accent;
+    box-shadow: -20px 20px 0 -3px $accent;
   }
 }
 // plan location end
 
 // footer start
+footer {
+  background-color: $quaternary;
+}
+
 .bottomBanner {
   background-image: url("../../../assets/banner-image.jpg");
   background-repeat: no-repeat;

@@ -635,8 +635,12 @@ nav .mobileMenu:hover, nav .mobileMenu:focus {
   right: -80px;
 }
 .rightImgContainer img {
-  -webkit-box-shadow: -15px 15px 0 -3px #50e3c2;
-          box-shadow: -15px 15px 0 -3px #50e3c2;
+  -webkit-box-shadow: -20px 20px 0 -3px #50e3c2;
+          box-shadow: -20px 20px 0 -3px #50e3c2;
+}
+
+footer {
+  background-color: #fafffe;
 }
 
 .bottomBanner {
