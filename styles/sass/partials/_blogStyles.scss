@@ -11,8 +11,8 @@
 
     h1 {
       font-family: $primaryFont;
-      font-size: 4.35rem;
       font-weight: 700;
+      font-size: 4.35rem;
       line-height: 58px;
       letter-spacing: 9px;
       color: white;
@@ -106,11 +106,11 @@
 .aside {
   background-color: white;
   position: relative;
-  top: 120px;
+  top: 170px;
   max-width: 330px;
   width: 100%;
   margin-left: 50px;
-  box-shadow: -15px 25px 0 3px white;
+  box-shadow: -30px 10px 0 -10px white;
 
   a,
   .postList a {

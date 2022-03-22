@@ -25,11 +25,11 @@ nav {
   }
 
   a {
+    font-weight: 700;
     line-height: 29px;
     letter-spacing: 1px;
-    font-weight: 400;
-    padding: 8px 0 8px 20px;
     text-transform: uppercase;
+    padding: 8px 0 8px 20px;
 
     &:hover,
     &:focus {

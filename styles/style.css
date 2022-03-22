@@ -266,8 +266,8 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
   font-weight: 400;
+  font-size: 1rem;
   color: #2c2c2c;
 }
 
@@ -345,11 +345,11 @@ h3 {
 
 h4,
 h5 {
-  color: #063974;
-  margin-bottom: 5px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1px;
+  color: #063974;
+  margin-bottom: 5px;
 }
 
 p {
@@ -380,8 +380,8 @@ section {
 }
 
 a {
-  color: #fafffe;
   font-size: 1rem;
+  color: #fafffe;
   display: inline-block;
 }
 
@@ -397,6 +397,7 @@ button {
 .btn {
   font-family: "Playfair Display SC", serif;
   font-weight: 900;
+  font-size: 1rem;
   line-height: 32px;
   letter-spacing: 1px;
   padding: 5px 12px;
@@ -441,11 +442,11 @@ nav .navBar li {
   margin-left: 30px;
 }
 nav a {
+  font-weight: 700;
   line-height: 29px;
   letter-spacing: 1px;
-  font-weight: 400;
-  padding: 8px 0 8px 20px;
   text-transform: uppercase;
+  padding: 8px 0 8px 20px;
 }
 nav a:hover, nav a:focus {
   color: #50e3c2;
@@ -545,9 +546,9 @@ nav .mobileMenu:hover, nav .mobileMenu:focus {
 }
 
 .iconTitle .icon {
+  font-size: 1.5rem;
   color: #fff;
   background-color: #50e3c2;
-  font-size: 1.5rem;
   height: 50px;
   width: 50px;
   display: -webkit-box;
@@ -751,8 +752,8 @@ textarea {
 }
 .contactPage .contactTitle h1 {
   font-family: "Lato", sans-serif;
-  font-size: 4.35rem;
   font-weight: 700;
+  font-size: 4.35rem;
   line-height: 58px;
   letter-spacing: 9px;
   color: white;
@@ -786,9 +787,9 @@ textarea {
 }
 .socials a {
   font-weight: 700;
-  color: #2c2c2c;
   font-size: 1rem;
   letter-spacing: 2px;
+  color: #2c2c2c;
 }
 .socials a:hover, .socials a:focus {
   color: #50e3c2;
@@ -815,8 +816,8 @@ textarea {
 }
 .blogPage .blogTitle h1 {
   font-family: "Lato", sans-serif;
-  font-size: 4.35rem;
   font-weight: 700;
+  font-size: 4.35rem;
   line-height: 58px;
   letter-spacing: 9px;
   color: white;
@@ -898,12 +899,12 @@ textarea {
 .aside {
   background-color: white;
   position: relative;
-  top: 120px;
+  top: 170px;
   max-width: 330px;
   width: 100%;
   margin-left: 50px;
-  -webkit-box-shadow: -15px 25px 0 3px white;
-          box-shadow: -15px 25px 0 3px white;
+  -webkit-box-shadow: -30px 10px 0 -10px white;
+          box-shadow: -30px 10px 0 -10px white;
 }
 .aside a,
 .aside .postList a {
@@ -1112,17 +1113,17 @@ textarea {
   }
 
   .iconTitle .icon {
-    left: -45px;
     font-size: 1rem;
+    left: -45px;
     height: 35px;
     width: 35px;
   }
 }
 @media (max-width: 428px) {
   p {
+    font-weight: 300;
     font-size: 0.8rem;
     letter-spacing: 0px;
-    font-weight: 300;
   }
 }
 @media (max-width: 950px) {
@@ -1273,5 +1274,10 @@ textarea::placeholder {
   }
   .blogPage .blogTitle h1 {
     font-size: 3.5rem;
+  }
+
+  .aside {
+    -webkit-box-shadow: -20px 10px 0 -10px white;
+            box-shadow: -20px 10px 0 -10px white;
   }
 }
