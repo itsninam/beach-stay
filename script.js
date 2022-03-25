@@ -7,27 +7,42 @@ mobileMenu.addEventListener("click", function () {
 });
 
 //assignment 2 - modal window
-const submitButton = document.querySelector("#formSubmit");
+const formElement = document.querySelector("form");
 const modalWindow = document.querySelector(".modalWindow");
 const closeModal = document.querySelector("#hideModal");
-const userMessage = document.querySelector("#message");
-const userName = document.querySelector("#name");
-const userEmail = document.querySelector("#email");
 
 function toggleModal() {
   modalWindow.classList.toggle("showModal");
 }
 
-submitButton.addEventListener("click", function (event) {
+formElement.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  const userMessage = document.querySelector("#message");
+  const userName = document.querySelector("#name");
+  const userEmail = document.querySelector("#email");
+
   if (!userMessage.value || !userName.value || !userEmail.value) {
     userMessage.placeholder = "Please enter a message!";
     userMessage.classList.add("warningText");
+
     userName.placeholder = "Please enter your name!";
     userName.classList.add("warningText");
+
     userEmail.placeholder = "Please enter your email!";
     userEmail.classList.add("warningText");
   } else {
+    userMessage.value = "";
+    userMessage.placeholder = "Message";
+    userMessage.classList.remove("warningText");
+
+    userName.value = "";
+    userName.placeholder = "Name";
+    userName.classList.remove("warningText");
+
+    userEmail.value = "";
+    userEmail.placeholder = "Email";
+    userEmail.classList.remove("warningText");
     toggleModal();
   }
 });
