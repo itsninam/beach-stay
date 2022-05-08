@@ -62,9 +62,27 @@
               id="message"
               placeholder="Message"
             ></textarea>
-            <button class="btn">Submit</button>
+            <button type="submit" id="formSubmit" class="btn">Submit</button>
           </form>
           <!-- contact form ends here -->
+
+          <!-- modal window starts here -->
+          <!---Code written after reviewing MDN documentation regarding modal windows and accessibility -->
+          <div class="containerModal">
+            <div class="modalWindow hideModal">
+              <div
+                class="modalContent"
+                role="dialog"
+                aria-labelledby="modalHeading"
+                aria-describedby="modalContent"
+              >
+                <h2 id="modalHeading">Thank you for your message!</h2>
+                <p id="modalContent">We look forward to chatting with you.</p>
+                <button id="hideModal" class="btn">Close window</button>
+              </div>
+            </div>
+          </div>
+          <!-- modal window ends here -->
 
           <!-- socials start here -->
           <div class="contactInfo">
